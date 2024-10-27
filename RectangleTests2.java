@@ -3,9 +3,6 @@ package lab4;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import java.util.List;
-import java.beans.Transient;
-import java.util.ArrayList;
 
 class RectangleTests {
 
