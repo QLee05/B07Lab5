@@ -19,4 +19,19 @@ public class Rectangle {
 	public boolean isSquare() {
 		return length == width;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			return false;
+		}
+		if(!(obj instanceof Rectangle)) {
+			return false;
+		}
+		Rectangle r = (Rectangle)obj;
+		return A.equals(r.A) && length == r.length && width == r.width;
+	}
+	@Override
+	public int hashCode() {
+		return (int)(A.x+A.y+length+width);
+	}
 }
